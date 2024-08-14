@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 // src/components/Footer.js
 import React from "react";
 
@@ -88,7 +89,7 @@ const Footer = () => {
             <div className="col-md-6 col-lg-6 col-xl-3">
               <div className="footer-item d-flex flex-column">
                 <h4 className="text-secondary mb-4">Our Partner</h4>
-                <a href="#" className="">
+                <a href="" className="">
                   <i className="fas fa-angle-right me-2" /> Samsung
                 </a>
                 <a href="#" className="">
