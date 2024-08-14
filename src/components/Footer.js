@@ -19,7 +19,8 @@ const Footer = () => {
                   FLOOR ADARSHININ PLAZA 91, ADHCHINI NEW DELHI- 110017 INDIA
                 </a>
                 <a href="">
-                  <i className="fas fa-envelope me-2" /> info@example.com
+                  <i className="fas fa-envelope me-2" />{" "}
+                  info@brightviewtelecom.com
                 </a>
                 <a href="">
                   <i className="fas fa-phone me-2" />
