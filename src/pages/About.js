@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React from "react";
-
+import { Link } from "react-router-dom";
 const About = () => {
   return (
     <div>
@@ -248,13 +248,12 @@ const About = () => {
               </div>
             </div>
             <div className="col-12 text-center">
-              <a
+              <Link to={"/services"}
                 className="btn btn-primary border-secondary rounded-pill py-3 px-5 wow fadeInUp"
                 data-wow-delay="0.1s"
-                href="/services"
               >
                 View More
-              </a>
+              </Link>
             </div>
           </div>
         </div>

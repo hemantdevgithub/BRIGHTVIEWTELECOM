@@ -15,8 +15,8 @@ const Footer = () => {
               <div className="footer-item d-flex flex-column">
                 <h4 className="text-secondary mb-4">Contact Info</h4>
                 <a href="">
-                  <i className="fa fa-map-marker-alt me-2" /> 123 Street, New
-                  York, USA
+                  <i className="fa fa-map-marker-alt me-2" /> S 11-12, SECOND
+                  FLOOR ADARSHININ PLAZA 91, ADHCHINI NEW DELHI- 110017 INDIA
                 </a>
                 <a href="">
                   <i className="fas fa-envelope me-2" /> info@example.com
