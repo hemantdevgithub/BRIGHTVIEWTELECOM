@@ -19,7 +19,7 @@ const Home = () => {
           </ol>
           <div className="carousel-inner" role="listbox">
             <div className="carousel-item active">
-              <img src="img/carousel-1.jpg" className="img-fluid" alt="Image" />
+              <img src="/home1.jpg" className="img-fluid" alt="Image" />
               <div className="carousel-caption">
                 <div className="text-center p-4" style={{ maxWidth: 900 }}>
                   {/* <h4 class="text-white text-uppercase fw-bold mb-3 mb-md-4 wow fadeInUp" data-wow-delay="0.1s">Solution For All</h4> */}
@@ -47,7 +47,7 @@ const Home = () => {
               </div>
             </div>
             <div className="carousel-item">
-              <img src="img/carousel-2.jpg" className="img-fluid" alt="Image" />
+              <img src="/home2.jpg" className="img-fluid" alt="Image" />
               <div className="carousel-caption">
                 <div className="text-center p-4" style={{ maxWidth: 900 }}>
                   <h5
