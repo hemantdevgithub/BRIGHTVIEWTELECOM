@@ -105,7 +105,7 @@ const Contact = () => {
                 <div className="me-4">
                   {/* <div class="bg-light d-flex align-items-center justify-content-center" style="width: 90px; height: 90px; border-radius: 10px;"><i class="fas fa-share fa-3x text-primary"></i></div> */}
                 </div>
-                <div className="d-flex">
+                {/* <div className="d-flex">
                   <a
                     className="btn btn-secondary border-secondary me-2 p-0"
                     href=""
@@ -124,7 +124,7 @@ const Contact = () => {
                   >
                     instagram <i className="fas fa-chevron-circle-right" />
                   </a>
-                </div>
+                </div> */}
               </div>
             </div>
             <div className="col-lg-6 wow fadeInRight" data-wow-delay="0.3">
