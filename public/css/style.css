@@ -355,8 +355,8 @@
 
 /*** Single Page Hero Header Start ***/
 .bg-breadcrumb {
-  background: linear-gradient(rgba(0, 58, 102, 0.9), rgba(0, 58, 102, 0.8)),
-    url(../img/breadcrumb.png);
+  background: linear-gradient(rgba(0, 58, 102, 0.6), rgba(0, 58, 102, 0.5)),
+    url(../about.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: initial;
