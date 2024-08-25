@@ -2,8 +2,59 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 // src/pages/Home.js
 import React from "react";
-
+import Marquee from "react-fast-marquee";
+import Carousel from "../components/Carousel";
 const Home = () => {
+  const responsive = {
+    superLargeDesktop: {
+      // These are arbitrary settings for large screens
+      breakpoint: { max: 4000, min: 1024 },
+      items: 3,
+    },
+    desktop: {
+      breakpoint: { max: 1024, min: 768 },
+      items: 2,
+    },
+    tablet: {
+      breakpoint: { max: 768, min: 464 },
+      items: 1,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+    },
+  };
+
+  const services = [
+    {
+      title: "Civil Work",
+      image: "img/service-1.jpg",
+      description: "Civil Work With Tower Foundation, Electrical Work",
+    },
+    {
+      title: "RF Drive Test",
+      image: "img/service-2.jpg",
+      description:
+        "RF Drive Test And RF Optimization , EMF , EMI Testing And There Tools Renting",
+    },
+    {
+      title: "IWAN",
+      image: "img/service-3.jpg",
+      description: "IWAN FOR AIRTEL.",
+    },
+    {
+      title: "Data Center",
+      image: "img/service-1.jpg",
+      description:
+        "Experienced Teams For Implementing Server Racks, Subrack, Cabling, Optical Fiber...",
+    },
+    {
+      title: "Wireline Broadband Network",
+      image: "img/service-2.jpg",
+      description:
+        "Working With Huawei /Alcatel Lucent/Nokia In FTTH Solution Uses One Optical Fiber Network...",
+    },
+  ];
   return (
     <div>
       {/* Carousel Start */}
@@ -195,7 +246,8 @@ const Home = () => {
               business stays connected and productive.
             </p>
           </div>
-          <div className="row g-4">
+          <Carousel />
+          {/* <div className="row  g-4" style={{"display":"flex","flexWrap":"nowrap"}}>
             <div
               className="col-lg-6 col-xl-4 wow fadeInUp"
               data-wow-delay="0.1s"
@@ -440,58 +492,65 @@ const Home = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
+
       {/* Services End */}
       {/* Features Start */}
-      <div className="container-fluid features overflow-hidden py-5">
+
+      <div className="container-fluid bg-light py-5">
         <div className="container">
           <div
             className="section-title text-center mb-5 wow fadeInUp"
             data-wow-delay="0.1s"
           >
-            <div className="sub-style">
-              <h5 className="sub-title text-primary px-3">Who We are?</h5>
+            <div className="sub-style mb-3">
+              <h5 className="sub-title text-primary px-3 d-inline-block">
+                Who We Are?
+              </h5>
             </div>
-            <h1 className="display-5 mb-4">
+            <h1 className="display-5 fw-bold mb-4">
               WE ARE AN ISO 9001 AND OHSAS 18001 CERTIFIED COMPANY.
             </h1>
-            <p className="mb-0">
-              Brightview Telecom was incorporated in 2008. Since then Brightview
-              is providing various solutions to its clients in the field of
-              Telecom, IT and Manpower.
+            <p className="mb-3">
+              Brightview Telecom was incorporated in 2008. Since then,
+              Brightview has been providing various solutions to its clients in
+              the field of Telecom, IT, and Manpower.
             </p>
             <p className="mb-0">
-              With specialized delivery teams , experienced management and long
-              term vision, Brightview is a respected name in the field of
+              With specialized delivery teams, experienced management, and a
+              long-term vision, Brightview is a respected name in the field of
               Telecom and IT.
             </p>
           </div>
         </div>
       </div>
-      {/* Features End */}
-      {/* Countries We Offer Start */}
-      <div className="container-fluid country overflow-hidden py-5">
+      {/* Who We Are Section End */}
+
+      {/* What We Do Section Start */}
+      <div className="container-fluid py-5">
         <div className="container">
           <div
             className="section-title text-center wow fadeInUp"
             data-wow-delay="0.1s"
             style={{ marginBottom: 70 }}
           >
-            <div className="sub-style">
-              <h5 className="sub-title text-primary px-3">WHAT WE DO?</h5>
+            <div className="sub-style mb-3">
+              <h5 className="sub-title text-primary px-3 d-inline-block">
+                What We Do?
+              </h5>
             </div>
-            <h1 className="display-5 mb-4">We are telling what we are doing</h1>
-            <p className="mb-0">
-              Brightview Telecom specializes in installation of BTS, BSC, MSC,
-              Access Network, RF Drive test and optimization, Data center setups
-              and FTTH Solutions.
+            <h1 className="display-5 fw-bold mb-4">Our Expertise & Services</h1>
+            <p className="mb-3">
+              Brightview Telecom specializes in the installation of BTS, BSC,
+              MSC, Access Network, RF Drive test and optimization, Data center
+              setups, and FTTH Solutions.
             </p>
             <p className="mb-0">
-              We are expert in providing IT solutions in the field of Cloud, App
-              development, ERP etc. Beside this we also supply man power both
-              technical and non-technical.
+              We are experts in providing IT solutions in the field of Cloud,
+              App development, ERP, etc. Additionally, we supply both technical
+              and non-technical manpower.
             </p>
           </div>
         </div>
@@ -546,9 +605,7 @@ const Home = () => {
               </h5>
             </div>
             <h1 className="display-5 mb-4">What Our Technology Partner say</h1>
-            <p className="mb-0">
-           
-            </p>
+            <p className="mb-0"></p>
           </div>
           <div className="marquee">
             <div className="marquee-content">

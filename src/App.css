@@ -219,6 +219,7 @@
   padding: 35px 0;
   color: var(--bs-primary) !important;
   font-size: 17px;
+
   font-weight: 400;
   outline: none;
   transition: 0.5s;
@@ -458,7 +459,7 @@
       rgba(255, 255, 255, 0.9),
       rgba(255, 255, 255, 0.8)
     ),
-    url(../img/breadcrumb.png);
+    url(../img/Banner.jpeg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center center;

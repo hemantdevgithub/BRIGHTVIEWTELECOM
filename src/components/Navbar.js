@@ -1,82 +1,88 @@
-// src/components/Navbar.js
 import React from "react";
-import { NavLink} from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav>
-      <div className="container-fluid nav-bar p-0">
-        <nav className="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
-          <a href="/" className="navbar-brand p-0">
-            <h1 className="display-5 text-secondary m-0">
-              <img src="" className="img-fluid" alt="" />
-              BRIGHTVIEWTELECOM
-            </h1>
-            {/* <img src="img/logo.png" alt="Logo"> */}
-          </a>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarCollapse"
-          >
-            <span className="fa fa-bars" />
-          </button>
-          <div className="collapse navbar-collapse" id="navbarCollapse">
-            <div className="navbar-nav ms-auto py-0">
+    <nav className="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+      <div className="container-fluid px-4 px-lg-5">
+        <a href="/" className="navbar-brand d-flex align-items-center">
+       
+          <img src="logo-nav.png" alt="Logo" className="rounded-2" />
+        </a>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarCollapse">
+          <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li className="nav-item">
               <NavLink
                 to="/"
-                className="nav-item nav-link"
+                className="nav-link text-uppercase text-secondary fw-bold"
                 activeClassName="active"
                 exact
               >
                 Home
               </NavLink>
+            </li>
+            <li className="nav-item">
               <NavLink
                 to="/about"
-                className="nav-item nav-link"
+                className="nav-link text-uppercase text-secondary fw-bold"
                 activeClassName="active"
               >
                 About
               </NavLink>
+            </li>
+            <li className="nav-item">
               <NavLink
                 to="/services"
-                className="nav-item nav-link"
+                className="nav-link text-uppercase text-secondary fw-bold"
                 activeClassName="active"
               >
                 Services
               </NavLink>
+            </li>
+            <li className="nav-item">
               <NavLink
                 to="/clients"
-                className="nav-item nav-link"
+                className="nav-link text-uppercase text-secondary fw-bold"
                 activeClassName="active"
               >
                 Clients
               </NavLink>
+            </li>
+            <li className="nav-item">
               <NavLink
                 to="/awards"
-                className="nav-item nav-link"
+                className="nav-link text-uppercase text-secondary fw-bold"
                 activeClassName="active"
               >
                 Awards
               </NavLink>
+            </li>
+            <li className="nav-item">
               <NavLink
                 to="/contact"
-                className="nav-item nav-link"
+                className="nav-link text-uppercase text-secondary fw-bold"
                 activeClassName="active"
               >
                 Contact
               </NavLink>
-            </div>
-            <button
-              className="btn btn-primary btn-md-square border-secondary mb-3 mb-md-3 mb-lg-0 me-3"
-              data-bs-toggle="modal"
-              data-bs-target="#searchModal"
-            >
-              <i className="fas fa-search" />
-            </button>
-          </div>
-        </nav>
+            </li>
+          </ul>
+          <button
+            className="btn btn-outline-primary ms-3 rounded-pill px-4 py-2"
+            data-bs-toggle="modal"
+            data-bs-target="#searchModal"
+          >
+            <i className="fas fa-search"></i>
+          </button>
+        </div>
       </div>
     </nav>
   );

@@ -1,5 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
-/* eslint-disable jsx-a11y/img-redundant-alt */
 import React from "react";
 
 const Awards = () => {
@@ -19,7 +17,7 @@ const Awards = () => {
             data-wow-delay="0.3s"
           >
             <li className="breadcrumb-item">
-              <a href="index.html" className="text-white">
+              <a href="/" className="text-white">
                 Home
               </a>
             </li>
@@ -33,175 +31,49 @@ const Awards = () => {
         </div>
       </div>
       {/* Header End */}
-      {/* Services Start */}
-      <div className="container-fluid service overflow-hidden py-5">
-        <div className="container py-5">
+
+      {/* Awards Start */}
+      <div className="container-fluid py-5">
+        <div className="container">
           <div className="row g-4">
-            <div
-              className="col-lg-6 col-xl-4 wow fadeInUp"
-              data-wow-delay="0.1s"
-            >
-              <div className="service-item">
-                <div className="service-inner">
-                  <div className="service-img">
-                    <img
-                      src="img/certificate1.jpg"
-                      className="img-fluid w-100 rounded"
-                      alt="Image"
-                    />
+            {[
+              "img/certificate1.jpg",
+              "img/certificate2.jpg",
+              "img/certificate3.jpg",
+              "img/partnersawrd.jpeg",
+              "img/Huwai2014.png",
+              "img/Huwai2015.png",
+              "img/Huwaiaward.png",
+              "img/Huwaiaward1.png",
+              "img/Hu.png",
+              "img/Bvtpl.png",
+            ].map((image, index) => (
+              <div
+                key={index}
+                className="col-lg-4 col-md-6 wow fadeInUp"
+                data-wow-delay={`${0.1 * index}s`}
+              >
+                <div className="card h-100 shadow-sm border-0">
+                  <img
+                    src={image}
+                    className="card-img-top img-fluid rounded"
+                    alt={`Award ${index + 1}`}
+                    style={{ height: 250, objectFit: "cover" }}
+                  />
+                  <div className="card-body text-center">
+                    <h5 className="card-title text-secondary">Award Title</h5>
+                    <p className="card-text">
+                      Description of the award or achievement. Highlight the
+                      significance of the award and its impact on your company.
+                    </p>
                   </div>
                 </div>
               </div>
-            </div>
-            <div
-              className="col-lg-6 col-xl-4 wow fadeInUp"
-              data-wow-delay="0.3s"
-            >
-              <div className="service-item">
-                <div className="service-inner">
-                  <div className="service-img">
-                    <img
-                      src="img/certificate2.jpg"
-                      className="img-fluid w-100 rounded"
-                      alt="Image"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              className="col-lg-6 col-xl-4 wow fadeInUp"
-              data-wow-delay="0.5s"
-            >
-              <div className="service-item">
-                <div className="service-inner">
-                  <div className="service-img">
-                    <img
-                      src="img/certificate3.jpg"
-                      className="img-fluid w-100 rounded"
-                      alt="Image"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              className="col-lg-6 col-xl-4 wow fadeInUp"
-              data-wow-delay="0.1s"
-            >
-              <div className="service-item">
-                <div className="service-inner">
-                  <div className="service-img">
-                    <img
-                      src="img/partnersawrd.jpeg"
-                      className="img-fluid w-100 rounded"
-                      alt="Image"
-                      style={{ height: 440 }}
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              className="col-lg-6 col-xl-4 wow fadeInUp"
-              data-wow-delay="0.3s"
-            >
-              <div className="service-item">
-                <div className="service-inner">
-                  <div className="service-img">
-                    <img
-                      src="img/Huwai2014.png"
-                      className="img-fluid w-100 rounded"
-                      alt="Image"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              className="col-lg-6 col-xl-4 wow fadeInUp"
-              data-wow-delay="0.3s"
-            >
-              <div className="service-item">
-                <div className="service-inner">
-                  <div className="service-img">
-                    <img
-                      src="img/Huwai2015.png"
-                      className="img-fluid w-100 rounded"
-                      alt="Image"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              className="col-lg-6 col-xl-4 wow fadeInUp"
-              data-wow-delay="0.3s"
-            >
-              <div className="service-item">
-                <div className="service-inner">
-                  <div className="service-img">
-                    <img
-                      src="img/Huwaiaward.png"
-                      className="img-fluid w-100 rounded"
-                      alt="Image"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              className="col-lg-6 col-xl-4 wow fadeInUp"
-              data-wow-delay="0.3s"
-            >
-              <div className="service-item">
-                <div className="service-inner">
-                  <div className="service-img">
-                    <img
-                      src="img/Huwaiaward1.png"
-                      className="img-fluid w-100 rounded"
-                      alt="Image"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              className="col-lg-6 col-xl-4 wow fadeInUp"
-              data-wow-delay="0.3s"
-            >
-              <div className="service-item">
-                <div className="service-inner">
-                  <div className="service-img">
-                    <img
-                      src="img/Hu.png"
-                      className="img-fluid w-100 rounded"
-                      alt="Image"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              className="col-lg-6 col-xl-4 wow fadeInUp"
-              data-wow-delay="0.3s"
-            >
-              <div className="service-item">
-                <div className="service-inner">
-                  <div className="service-img">
-                    <img
-                      src="img/Bvtpl.png"
-                      className="img-fluid w-100 rounded"
-                      alt="Image"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
-      {/* Services End */}
+      {/* Awards End */}
     </div>
   );
 };
