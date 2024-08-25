@@ -22,7 +22,7 @@ const Awards = () => {
               </a>
             </li>
             <li className="breadcrumb-item">
-              <a href="#" className="text-white">
+              <a href="/" className="text-white">
                 Pages
               </a>
             </li>
