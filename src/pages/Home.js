@@ -2,59 +2,9 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 // src/pages/Home.js
 import React from "react";
-import Marquee from "react-fast-marquee";
 import Carousel from "../components/Carousel";
 const Home = () => {
-  const responsive = {
-    superLargeDesktop: {
-      // These are arbitrary settings for large screens
-      breakpoint: { max: 4000, min: 1024 },
-      items: 3,
-    },
-    desktop: {
-      breakpoint: { max: 1024, min: 768 },
-      items: 2,
-    },
-    tablet: {
-      breakpoint: { max: 768, min: 464 },
-      items: 1,
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1,
-    },
-  };
-
-  const services = [
-    {
-      title: "Civil Work",
-      image: "img/service-1.jpg",
-      description: "Civil Work With Tower Foundation, Electrical Work",
-    },
-    {
-      title: "RF Drive Test",
-      image: "img/service-2.jpg",
-      description:
-        "RF Drive Test And RF Optimization , EMF , EMI Testing And There Tools Renting",
-    },
-    {
-      title: "IWAN",
-      image: "img/service-3.jpg",
-      description: "IWAN FOR AIRTEL.",
-    },
-    {
-      title: "Data Center",
-      image: "img/service-1.jpg",
-      description:
-        "Experienced Teams For Implementing Server Racks, Subrack, Cabling, Optical Fiber...",
-    },
-    {
-      title: "Wireline Broadband Network",
-      image: "img/service-2.jpg",
-      description:
-        "Working With Huawei /Alcatel Lucent/Nokia In FTTH Solution Uses One Optical Fiber Network...",
-    },
-  ];
+ 
   return (
     <div>
       {/* Carousel Start */}
