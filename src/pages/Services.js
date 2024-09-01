@@ -47,20 +47,20 @@ const Services = () => {
             <h1 className="display-5 mb-4">
               Enabling Your Immigration Successfully
             </h1>
-            <p className="mb-0">
+            <p className="mb-0 text-start">
               Installation Of BTS, BSC, MSC, Server, Access Network, DWDM And
               SDH Network, GPON,FTTH Equipment Installation And Commissioning
             </p>
-            <p className="mb-0">
+            <p className="mb-0 text-start">
               Installation Of Multi Service Access Network (Wire Line) Equipment
               Installation And Commissioning.
             </p>
-            <p className="mb-0">
+            <p className="mb-0 text-start">
               {" "}
               Experience In RF Drive Test And Optimization, SCFT, SSCVT, EMF,
               NARDA Broadband Testing And NBM Activity.
             </p>
-            <p className="mb-0">
+            <p className="mb-0 text-start">
               {" "}
               Good Experience In Huawei Optix 1832 X-8/16/7500/8800/9800 /500
               /550 ,Alcatel Lucent _Nokia – 7750 SR-14s / 7750 SR-7s / 7750
@@ -70,7 +70,7 @@ const Services = () => {
               Transport Networks Into A Single Network.
             </p>
           </div>
-         <Carousel/>
+          <Carousel />
         </div>
       </div>
       {/* Services End */}

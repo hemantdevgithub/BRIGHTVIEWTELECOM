@@ -32,32 +32,37 @@ const Carousel = () => {
   ];
 
   return (
-      <Marquee className="p-3">
-            <div className="flex   justify-around space-x-5 me-4">
-
-      {services.map((service, index) => (
-          
-        <div
-        key={index}
-        className="cursor-pointer w-full border-2 border-black sm:w-[18rem] md:w-[20rem] lg:w-[22rem] h-[24rem] group font-poppins bg-white shadow-lg rounded-lg overflow-hidden transform transition-transform duration-300 hover:scale-105"
-        >
-          <div className="w-full h-[13rem] overflow-hidden">
-            <img
-              src={service.image}
-              className="h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-110"
-              alt={service.title}
+    <Marquee className="p-3"
+    autoFill={true}
+    >
+      <div className="d-flex  justify-content-around">
+        {services.map((service, index) => (
+          <div
+            key={index}
+            className="card border-dark mb-3 me-5"
+            style={{ width: "18rem", height: "24rem" }}
+          >
+            <div className="overflow-hidden" style={{ height: "13rem" }}>
+              <img
+                src={service.image}
+                className="card-img-top"
+                style={{
+                  height: "100%",
+                  width: "100%",
+                  objectFit: "cover",
+                  transition: "transform 0.3s",
+                }}
+                alt={service.title}
               />
+            </div>
+            <div className="card-body">
+              <h5 className="card-title text-dark">{service.title}</h5>
+              <p className="card-text text-muted">{service.description}</p>
+            </div>
           </div>
-          <div className="p-4">
-            <h3 className="text-lg font-semibold mb-2 text-gray-800">
-              {service.title}
-            </h3>
-            <p className="text-gray-600 text-sm">{service.description}</p>
-          </div>
-        </div>
-      ))}
-    </div>
-      </Marquee>
+        ))}
+      </div>
+    </Marquee>
   );
 };
 

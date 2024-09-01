@@ -47,26 +47,26 @@ const About = () => {
       </div>
       {/* Header End */}
       {/* aboutstart */}
-      <div className="container-fluid features overflow-hidden py-5">
+      <div className="container-fluid text-start features overflow-hidden py-5">
         <div className="container">
           <div
             className="section-title text-center mb-5 wow fadeInUp"
             data-wow-delay="0.1s"
           >
-            <div className="sub-style">
+            <div className="sub-style ">
               <h5 className="sub-title text-primary px-3">Who We are?</h5>
             </div>
-            <h1 className="display-5 mb-4">
+            <h1 className="display-5 mb-4 text-start">
               Brightview telecom is an ISO 9001 and ISO 14001 and ISO 45001
               certified company.
             </h1>
-            <p className="mb-0">
+            <p className="mb-0 text-start">
               Brightview Telecom Pvt. Ltd is a leading telecom company having
               more than 15 years of expertise in the field of telecom equipment
               installation, commissioning and other telecom activities Like
               Trunkey projects
             </p>
-            <p className="mb-0">
+            <p className="mb-0 text-start">
               Having more than 250 field teams spanning around 10 telecom
               circles pan India and Nepal. Brightview provides all kind of
               telecom services like RF suvery and Site acquisition ,RF Drive
@@ -76,7 +76,7 @@ const About = () => {
               equipment, Access Equipment etc. Brightview is a Gold partner of
               Huwaei and Excellent Partner of ZTE .
             </p>
-            <p className="mb-0">
+            <p className="mb-0 text-start">
               Brightview telecom also provides various IT Solutions including
               Hardware and Software. Having partnered with leading technology
               companies like ACCOPS, AWS, BEL Technologies etc. Brightview
@@ -100,7 +100,7 @@ const About = () => {
             <h1 className="display-5 mb-4">
               Get the Best Service Training with Our Company
             </h1>
-            <p className="mb-0">
+            <p className="mb-0 text-start">
               BrightViewTelecom specializes in providing top-tier service
               training to ensure your team is equipped with the skills needed
               for optimal communication and connectivity. Our training programs

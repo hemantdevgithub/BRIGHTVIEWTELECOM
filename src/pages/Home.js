@@ -4,7 +4,6 @@
 import React from "react";
 import Carousel from "../components/Carousel";
 const Home = () => {
- 
   return (
     <div>
       {/* Carousel Start */}
@@ -153,10 +152,10 @@ const Home = () => {
         <div className="container py-5">
           <div className="row g-5">
             <div className="col-xl-5 wow fadeInLeft" data-wow-delay="0.1s">
-              <div className="bg-light rounded">
+              <div className="bg-light">
                 <img
                   src="img/about-2.png"
-                  className="img-fluid w-100"
+                  className="img-fluid w-100 rounded-3"
                   style={{ marginBottom: "-7px" }}
                   alt="Image"
                 />
@@ -180,7 +179,7 @@ const Home = () => {
       </div>
       {/* About End */}
       {/* Services Start */}
-      <div className="container-fluid service overflow-hidden pt-5">
+      <div className="container-fluid  service overflow-hidden pt-5">
         <div className="container py-5">
           <div
             className="section-title text-center mb-5 wow fadeInUp"
@@ -189,8 +188,8 @@ const Home = () => {
             <div className="sub-style">
               <h5 className="sub-title text-primary px-3">Our Services</h5>
             </div>
-            <h1 className="display-5 mb-4">What Solutions We Provide</h1>
-            <p className="mb-0">
+            <h1 className="display-5 mb-4 ">What Solutions We Provide</h1>
+            <p className="mb-0 text-start">
               We offer a comprehensive range of telecommunication solutions
               designed to meet your business needs. Our services ensure your
               business stays connected and productive.
@@ -448,63 +447,69 @@ const Home = () => {
 
       {/* Services End */}
       {/* Features Start */}
-
-      <div className="container-fluid bg-light py-5">
-        <div className="container">
-          <div
-            className="section-title text-center mb-5 wow fadeInUp"
-            data-wow-delay="0.1s"
-          >
-            <div className="sub-style mb-3">
-              <h5 className="sub-title text-primary px-3 d-inline-block">
-                Who We Are?
-              </h5>
+      <div className="container-fluid p-5">
+        <div className="row">
+          {/* Who We Are Section Start */}
+          <div className="col-12 col-md-6  py-5">
+            <div className="container">
+              <div
+                className="section-title text-center mb-5 wow fadeInUp"
+                data-wow-delay="0.1s"
+              >
+                <div className="sub-style mb-3">
+                  <h5 className="sub-title text-primary px-3 d-inline-block">
+                    Who We Are?
+                  </h5>
+                </div>
+                <h1 className="display-6 fw-bold mb-4">
+                  WE ARE AN ISO 9001 AND OHSAS 18001 CERTIFIED COMPANY.
+                </h1>
+                <p className="mb-3 text-start">
+                  Brightview Telecom was incorporated in 2008. Since then,
+                  Brightview has been providing various solutions to its clients
+                  in the field of Telecom, IT, and Manpower.
+                </p>
+                <p className="mb-0 text-start">
+                  With specialized delivery teams, experienced management, and a
+                  long-term vision, Brightview is a respected name in the field
+                  of Telecom and IT.
+                </p>
+              </div>
             </div>
-            <h1 className="display-5 fw-bold mb-4">
-              WE ARE AN ISO 9001 AND OHSAS 18001 CERTIFIED COMPANY.
-            </h1>
-            <p className="mb-3">
-              Brightview Telecom was incorporated in 2008. Since then,
-              Brightview has been providing various solutions to its clients in
-              the field of Telecom, IT, and Manpower.
-            </p>
-            <p className="mb-0">
-              With specialized delivery teams, experienced management, and a
-              long-term vision, Brightview is a respected name in the field of
-              Telecom and IT.
-            </p>
           </div>
-        </div>
-      </div>
-      {/* Who We Are Section End */}
+          {/* Who We Are Section End */}
 
-      {/* What We Do Section Start */}
-      <div className="container-fluid py-5">
-        <div className="container">
-          <div
-            className="section-title text-center wow fadeInUp"
-            data-wow-delay="0.1s"
-            style={{ marginBottom: 70 }}
-          >
-            <div className="sub-style mb-3">
-              <h5 className="sub-title text-primary px-3 d-inline-block">
-                What We Do?
-              </h5>
+          {/* What We Do Section Start */}
+          <div className="col-12 col-md-6 py-5">
+              <div
+                className="section-title text-center wow fadeInUp"
+                data-wow-delay="0.1s"
+                style={{ marginBottom: 70 }}
+              >
+                <div className="sub-style mb-3">
+                  <h5 className="sub-title text-primary px-3 d-inline-block">
+                    What We Do?
+                  </h5>
+                </div>
+                <h1 className="display-5 fw-bold mb-4">
+                  Our Expertise & Services
+                </h1>
+                <p className="mb-3 text-start">
+                  Brightview Telecom specializes in the installation of BTS,
+                  BSC, MSC, Access Network, RF Drive test and optimization, Data
+                  center setups, and FTTH Solutions.
+                </p>
+                <p className="mb-0 text-start">
+                  We are experts in providing IT solutions in the field of
+                  Cloud, App development, ERP, etc. Additionally, we supply both
+                  technical and non-technical manpower.
+                </p>
+              </div>
             </div>
-            <h1 className="display-5 fw-bold mb-4">Our Expertise & Services</h1>
-            <p className="mb-3">
-              Brightview Telecom specializes in the installation of BTS, BSC,
-              MSC, Access Network, RF Drive test and optimization, Data center
-              setups, and FTTH Solutions.
-            </p>
-            <p className="mb-0">
-              We are experts in providing IT solutions in the field of Cloud,
-              App development, ERP, etc. Additionally, we supply both technical
-              and non-technical manpower.
-            </p>
           </div>
-        </div>
+          {/* What We Do Section End */}
       </div>
+
       {/* Countries We Offer End */}
       {/* testimonial start  */}
       <div className="container-fluid testimonial overflow-hidden pb-5">

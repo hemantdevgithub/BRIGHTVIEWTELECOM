@@ -44,22 +44,24 @@ const Clients = () => {
               <h5 className="sub-title text-primary px-3">Our Clients</h5>
             </div>
             {/* <h1 class="display-5 mb-4">Enabling Your Immigration Successfully</h1> */}
-            <p className="mb-0">
+            <p className="mb-0 text-start">
               {" "}
               Approved By All Major OEMs Including Nokia, Huawei, Ericsson, ZTE,
               Alcatel, NEC, Samsung, NEC Ceragon Etc.
             </p>
-            <p className="mb-0">
+            <p className="mb-0 text-start">
               Worked With All Major Operators Including Airtel , Vodafone, TTSL,
               RJIL, Samsung, Idea, MTS, Uninor, Videocon, Aircel, BSNL, MTNL
               Etc.
             </p>
-            <p className="mb-0">
+            <p className="mb-0 text-start">
               {" "}
               Working In Nepal For Huawei &amp; ZTE For Last 5 Years.
             </p>
-            <p className="mb-0">Project Executed In 10 Circles Of India</p>
-            <p className="mb-0">
+            <p className="mb-0 text-start">
+              Project Executed In 10 Circles Of India
+            </p>
+            <p className="mb-0 text-start">
               {" "}
               Most Valued Partner Of Huawei For Last 3 Years.
             </p>
@@ -114,9 +116,7 @@ const Clients = () => {
             <h5 className="sub-title text-primary px-3">Technology Partner</h5>
           </div>
           <h1 className="display-5 mb-4">What Our Technology Partner say</h1>
-          <p className="mb-0">
-       
-          </p>
+          <p className="mb-0"></p>
         </div>
         <div className="marquee">
           <div className="marquee-content">
